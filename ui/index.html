@@ -1,0 +1,47 @@
+<html>
+  <body>
+    <!-- Modal full screen -->
+    <div id="modal-full" class="uk-modal-full" uk-modal>
+      <div class="uk-modal-dialog">
+          <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+              <div class="uk-background-cover" style="background-color: #c5ddeb" uk-height-viewport></div>
+              <div class="uk-padding-large">
+                  <h1>Chat</h1>
+                  <p>Hola!, bienvenido a la aplicacion de chat. Ingresa tu nombre</p>
+                  <div class="uk-margin">
+                    <input id="input-name" class="uk-input" type="text" placeholder="Nombre">
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div id="chat-container" class="uk-container uk-width-1-1 uk-padding-remove uk-margin-remove hidden">
+      <div class="userdata uk-text-center">
+        <span class="uk-margin-small-right" uk-icon="user"></span>
+        <span id="username">Lalo</span>
+      </div>
+      <div class="chat_body uk-width-1-1">
+        <div class="chat_names">
+          <div class="title uk-text-bold">People</div>
+          <ul id="user-list" class="name-list">
+          </ul>
+        </div>
+        <div class="chat_messages">
+          <div class="chat_messages-wrapper">
+            <div class="message-header">
+              <span class="chat-with">Chat with Eduardo</span>
+            </div>
+            <div id="message-pool" class="messages">
+            </div>
+            <div class="controls">
+              <input id="message-input" placeholder="Enter message" />
+              <button id="send-btn" class="uk-button uk-button-default">Enviar</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
